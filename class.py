@@ -6,5 +6,11 @@ class House:
     def schet(self):
         print('Текущий этаж равен: ')
 
+
 my_house = House()
-my_house.schet()
+
+House.numberOfFloors = 0
+while House.numberOfFloors < 10:
+    House.numberOfFloors += 1
+    my_house.schet()
+    print(House.numberOfFloors)
